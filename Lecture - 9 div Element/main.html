@@ -1,0 +1,72 @@
+<!--Lecture 9 - div element -->
+
+<!DOCTYPE html>
+<htm lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Faiz Khalid">
+        <meta name="description" content="Learning about div element">
+        <title>Learning about div element</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <style>
+            .thumbnail {
+                width: 300px;
+                display: block;
+                margin-top: 10px;
+                margin-left: 0px;
+            }
+
+            .search-bar {
+                font-size: 20px;
+                margin-top: 20px;
+
+            }
+
+            .video-title {
+                width: 300px;
+                margin-left: 0px;
+            }
+
+            /* .video-author,
+            .video-stats {
+                display: inline-block;
+
+            }*/
+
+            .video-preview {
+                /*display: inline-block;*/
+                width: 300px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 5px;
+            }
+
+            /* .input-text {
+                margin-bottom: 10px;
+         }  */
+        </style>
+    </head>
+
+    <body>
+        <input class="search-bar" type="text" placeholder="Search"><br>
+
+        <div class="video-preview">
+
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="image">
+            <p class="video-title">Talking Tech <strong>and AI with</strong> Google CEO Sundar Pichai!</p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &middot; 6 months ago</p>
+
+        </div>
+
+        <div class="video-preview">
+
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="image">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views &middot; 4 years ago</p>
+
+        </div>
+    </body>
+    </html>

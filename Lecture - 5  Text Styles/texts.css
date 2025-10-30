@@ -1,0 +1,88 @@
+
+ /*p {
+            font-family: Arial;
+            margin-top: 0px;         CSS Specificity
+        }*/
+
+   .video-title {
+    /* Changing font*/
+    font-family: Arial;
+    
+    
+    /*Changing size of font*/
+    font-size: 18px;
+
+    /*Making it bold*/
+    font-weight: bold;
+
+    width: 250px;
+
+    /*Making text in italics
+    font-style: italic;*/
+
+    /*Spacing between lines*/
+    line-height: 24px;
+    /*margin-top: 0px;
+    margin-bottom: 0px;*/
+    /*Center text
+    text-align: center; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+   .video-stats {
+    font-family: Arial;
+    font-size: 14px;
+    color: rgb(96, 96, 96) ;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+}
+
+.video-author {
+    font-family: Arial;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.vedio-description {
+    font-family: Arial;
+    font-size: 18px;
+    color: rgb(96, 96, 96);
+    width: 340px;
+    line-height: 24px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+.apple-text {
+    margin-bottom: 50px;
+    font-family: Arial;
+    font-size: 18px;
+    background-color: rgb(227, 65, 64);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    
+
+}
+
+    .span-link {
+        color: red;
+        margin-left: 12px;   /*Spacing between words*/
+    }
+    .span-link:hover {
+        text-decoration: underline;
+
+    }
+
+.shop-link {
+   cursor: pointer;
+}
+
+.shop-link:hover {
+    text-decoration: underline;
+}

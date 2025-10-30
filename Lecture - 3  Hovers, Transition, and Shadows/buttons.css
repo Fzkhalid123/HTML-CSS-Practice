@@ -1,0 +1,102 @@
+
+ .subscribe-button {
+    background-color: rgb(200, 0, 0);
+    color: white;    
+    border: none;  
+    
+    border-radius: 2px;
+    cursor: pointer;
+
+    /*Adding CSS Box Model - margin, and padding*/
+
+    margin-right: 8px;
+    margin-left: 8px;
+    /*margin-top: 8px;*/
+    vertical-align: top;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    
+    transition: opacity 1s;
+   }
+
+   .subscribe-button:hover {
+    opacity: 0.7;
+   }
+
+   .subscribe-button:active {
+    opacity: 0.5;
+    
+   }
+
+   
+
+.join-button {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(41, 118, 211);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(41, 118, 211);
+    
+    cursor: pointer;
+    padding-left: 10px;
+
+    /*Adding CSS Box Model - margin, and padding*/
+
+    margin-right: 8px;
+    margin-left: 8px;
+   /* margin-top: 8px;*/
+    vertical-align: top;
+
+    padding-top: 9px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 9px;
+
+
+    transition: background-color 0.15s, color 0.15s  ;
+
+}
+
+.join-button:hover {
+    background-color: rgb(41, 118, 211) ;
+    color: rgb(255, 255, 255);
+    
+}
+
+.join-button:active {
+    opacity: 0.7;
+}
+
+.tweet-button {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border: none;
+    
+    /*Adding CSS Box Model - margin, and padding*/
+
+    margin-right: 8px;
+    /*margin-top: 8px;*/
+    vertical-align: top;
+    margin-left: 8px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+   
+    cursor:pointer;
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+.tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.15s;
+}

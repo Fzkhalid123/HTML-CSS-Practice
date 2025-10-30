@@ -1,0 +1,334 @@
+
+<!--Lecture 10 - Nested layout - Vertical & Horizontal Layout -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Faiz Khalid" />
+    <meta name="description" content="Learning about div element" />
+    <title>Learning about Grid</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        /*.video-grid {
+            .video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);   3 equal columns 
+                optional: space between rows}*/
+
+      p {
+        font-family: Roboto, Arial; /* Back Up font - Arial */
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      
+        .thumbnail {
+         width: 100%;
+        border-radius: 10px;
+        }
+
+      .search-bar {
+        font-size: 20px;
+        margin-top: 0px;
+      }
+
+      .video-title-1 {
+        margin-left: 10px;
+        margin-top: 0px;
+        margin-bottom: 12px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+      }
+
+      .video-author-1,
+      .video-stats-1 {
+        margin-left: 10px;
+      }
+
+      /* .video-author,
+            .video-stats {
+                display: inline-block;
+            }*/
+
+      .video-preview {
+        
+        
+        
+        vertical-align: top;
+        margin-right: 5px;
+      }
+
+      /* .input-text {
+                margin-bottom: 10px;
+         }  */
+
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+      }
+
+      .channel-picture-1 {
+        vertical-align: top;
+      }
+      .video-info {
+        
+      }
+      .profile-picture-1 {
+        width: 50px;
+        border-radius: 50px;
+        margin-right: 5px;
+      }
+
+      .thumbnail-row-1 {
+       width: 100%;
+       }
+
+      /* .video-author {
+            font-size: 12px;
+            color: rgb(96, 96, 96);
+         }
+         .video-stats {s
+            font-size: 12px;
+            color: rgb(96, 96, 96);
+         }*/
+
+      .video-author-1,
+      .video-stats-1 {
+        font-size: 12px;
+        color: rgb(96, 96, 96);
+      }
+
+      .video-author-1 {
+        margin-bottom: 4px;
+      }
+
+      .channel-picture-2 {
+        vertical-align: top;
+        margin-right: 0px;
+      }
+
+      .profile-picture-2 {
+        width: 50px;
+        border-radius: 50px;
+        margin-right: 0px;
+      }
+
+      .thumbnail-row-2 {
+       width: 100%;
+      }
+
+      .video-preview-2 {
+    }
+
+      .video-title-2 {
+        margin-left: 10px;
+        margin-top: 0px;
+        margin-bottom: 12px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+      }
+
+      .video-author-2 {
+        margin-left: 10px;
+        font-size: 12px;
+        color: rgb(96, 96, 96);
+        margin-bottom: 4px;
+      }
+
+      .video-stats-2 {
+        margin-left: 10px;
+        font-size: 12px;
+        color: rgb(96, 96, 96);
+      }
+
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <input class="search-bar" type="text" placeholder="Search" /><br />
+
+    <div class="video-grid">            <!--Single Grid Container-->
+      <div class="video-preview">
+        <div class="thumbnail-row-1">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="image"
+          />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture-1">
+            <img
+              class="profile-picture-1"
+              src="channel-pictures/channel-1.jpeg"
+              alt="channel-picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title-1">
+              Talking Tech <strong>and AI with</strong> Google CEO Sundar
+              Pichai!
+            </p>
+            <p class="video-author-1">Marques Brownlee</p>
+            <p class="video-stats-1">3.4M views &middot; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row-2">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail-2.webp"
+            alt="image"
+          />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture-2">
+            <img
+              class="profile-picture-2"
+              src="channel-pictures/channel-2.jpeg"
+              alt="channel-picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title-2">Try Not To Laugh Challenge #9</p>
+            <p class="video-author-2">Markiplier</p>
+            <p class="video-stats-2">19M views &middot; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row-1">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail-3.webp"
+            alt="image"
+          />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture-1">
+            <img
+              class="profile-picture-1"
+              src="channel-pictures/channel-3.jpeg"
+              alt="channel-picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title-1">
+              Talking Tech <strong>and AI with</strong> Google CEO Sundar
+              Pichai!
+            </p>
+            <p class="video-author-1">Marques Brownlee</p>
+            <p class="video-stats-1">3.4M views &middot; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row-1">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail-4.webp"
+            alt="image"
+          />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture-1">
+            <img
+              class="profile-picture-1"
+              src="channel-pictures/channel-4.jpeg"
+              alt="channel-picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title-1">
+              Talking Tech <strong>and AI with</strong> Google CEO Sundar
+              Pichai!
+            </p>
+            <p class="video-author-1">Marques Brownlee</p>
+            <p class="video-stats-1">3.4M views &middot; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row-1">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail-5.webp"
+            alt="image"
+          />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture-1">
+            <img
+              class="profile-picture-1"
+              src="channel-pictures/channel-5.jpeg"
+              alt="channel-picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title-1">
+              Talking Tech <strong>and AI with</strong> Google CEO Sundar
+              Pichai!
+            </p>
+            <p class="video-author-1">Marques Brownlee</p>
+            <p class="video-stats-1">3.4M views &middot; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row-1">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail-6.webp"
+            alt="image"
+          />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture-1">
+            <img
+              class="profile-picture-1"
+              src="channel-pictures/channel-6.jpeg"
+              alt="channel-picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title-1">
+              Talking Tech <strong>and AI with</strong> Google CEO Sundar
+              Pichai!
+            </p>
+            <p class="video-author-1">Marques Brownlee</p>
+            <p class="video-stats-1">3.4M views &middot; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
